@@ -4,7 +4,7 @@ import { Repository } from "typeorm";
 import { Article } from "./data-access-article.entity";
 
 @Injectable()
-export class ArticleService {
+export class ArticleRepository {
   constructor(
     @InjectRepository(Article) private articleRepository: Repository<Article>
   ) {}

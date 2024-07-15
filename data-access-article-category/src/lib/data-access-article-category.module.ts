@@ -1,8 +1,11 @@
 import { Module } from '@nestjs/common';
+import { TypeOrmModule } from '@nestjs/typeorm';
+import { ArticleCategory } from './data-access-article-category.entity';
+import { ArticleCategoryRepository } from './data-access-article-category.repository';
 
 @Module({
-  controllers: [],
-  providers: [],
-  exports: [],
+  imports: [TypeOrmModule.forFeature([ArticleCategory])],
+  providers: [ArticleCategoryRepository],
+  exports: [ArticleCategoryRepository, TypeOrmModule],
 })
 export class DataAccessArticleCategoryModule {}

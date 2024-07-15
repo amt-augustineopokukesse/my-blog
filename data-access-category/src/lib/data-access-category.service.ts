@@ -4,7 +4,7 @@ import { Category } from './data-access-category.entity';
 import { Repository } from 'typeorm';
 
 @Injectable()
-export class CategoryService {
+export class CategoryRepository {
   constructor(
     @InjectRepository(Category) private categoryRepository: Repository<Category>
   ) {}

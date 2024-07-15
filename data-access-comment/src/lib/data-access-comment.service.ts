@@ -4,7 +4,7 @@ import { Comment } from './data-access-comment.entity';
 import { Repository } from 'typeorm';
 
 @Injectable()
-export class CommentService {
+export class CommentRepository {
   constructor(
     @InjectRepository(Comment) private commentRepository: Repository<Comment>
   ) {}

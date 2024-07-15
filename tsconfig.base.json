@@ -14,7 +14,9 @@
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
-    "paths": {}
+    "paths": {
+      "@my-blog/data-access-article": ["data-access-article/src/index.ts"]
+    }
   },
   "exclude": ["node_modules", "tmp"]
 }

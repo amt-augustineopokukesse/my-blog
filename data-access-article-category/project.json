@@ -1,0 +1,16 @@
+{
+  "name": "data-access-article-category",
+  "$schema": "../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "data-access-article-category/src",
+  "projectType": "library",
+  "tags": [],
+  "targets": {
+    "test": {
+      "executor": "@nx/jest:jest",
+      "outputs": ["{workspaceRoot}/coverage/{projectRoot}"],
+      "options": {
+        "jestConfig": "data-access-article-category/jest.config.ts"
+      }
+    }
+  }
+}

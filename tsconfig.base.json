@@ -16,6 +16,10 @@
     "baseUrl": ".",
     "paths": {
       "@my-blog/data-access-article": ["data-access-article/src/index.ts"],
+      "@my-blog/data-access-article-category": [
+        "data-access-article-category/src/index.ts"
+      ],
+      "@my-blog/data-access-category": ["data-access-category/src/index.ts"],
       "@my-blog/data-access-comment": ["data-access-comment/src/index.ts"]
     }
   },

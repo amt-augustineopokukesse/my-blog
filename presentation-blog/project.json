@@ -1,0 +1,16 @@
+{
+  "name": "presentation-blog",
+  "$schema": "../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "presentation-blog/src",
+  "projectType": "library",
+  "tags": [],
+  "targets": {
+    "test": {
+      "executor": "@nx/jest:jest",
+      "outputs": ["{workspaceRoot}/coverage/{projectRoot}"],
+      "options": {
+        "jestConfig": "presentation-blog/jest.config.ts"
+      }
+    }
+  }
+}

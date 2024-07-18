@@ -21,7 +21,9 @@
         "data-access-article-category/src/index.ts"
       ],
       "@my-blog/data-access-category": ["data-access-category/src/index.ts"],
-      "@my-blog/data-access-comment": ["data-access-comment/src/index.ts"]
+      "@my-blog/data-access-comment": ["data-access-comment/src/index.ts"],
+      "@my-blog/presentation-blog": ["presentation-blog/src/index.ts"],
+      "@my-blog/typeOrm-config": ["typeOrm-config/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]

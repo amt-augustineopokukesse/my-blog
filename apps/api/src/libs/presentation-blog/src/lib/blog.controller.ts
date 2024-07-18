@@ -1,5 +1,5 @@
 import { BlogService, IBlog, PartialBlog } from '@my-blog/business-logic-blog';
-import { Controller, Get, Param } from '@nestjs/common';
+import { Body, Controller, Get, Param, Post } from '@nestjs/common';
 
 @Controller('blog')
 export class BlogController {
@@ -15,5 +15,8 @@ export class BlogController {
     return this.blogService.findPostById(id);
   }
 
-  // ... other methods
+  @Post()
+  async createPost(@Body() blog: PartialBlog) {
+    return this.blogService.createPost(blog);
+  }
 }

@@ -63,5 +63,8 @@ export class BlogService {
     };
   }
 
-  // ... other methods
+  async createPost(article: PartialBlog): Promise<Partial<IBlog>> {
+    const newArticle = this.articleRepository.create(article);
+    return newArticle;
+  }
 }

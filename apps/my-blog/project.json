@@ -7,12 +7,12 @@
   "tags": [],
   "targets": {
     "build": {
-      "executor": "@angular-devkit/build-angular:application",
+      "executor": "@nx/angular:webpack-browser",
       "outputs": ["{options.outputPath}"],
       "options": {
         "outputPath": "dist/apps/my-blog",
+        "main": "apps/my-blog/src/main.ts",
         "index": "apps/my-blog/src/index.html",
-        "browser": "apps/my-blog/src/main.ts",
         "polyfills": ["zone.js"],
         "tsConfig": "apps/my-blog/tsconfig.app.json",
         "assets": [

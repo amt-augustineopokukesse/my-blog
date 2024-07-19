@@ -15,14 +15,24 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "@my-blog/business-logic-blog": ["apps/api/src/libs/business-logic-blog/src/index.ts"],
-      "@my-blog/data-access-article": ["apps/api/src/libs/data-access-article/src/index.ts"],
+      "@my-blog/business-logic-blog": [
+        "apps/api/src/libs/business-logic-blog/src/index.ts"
+      ],
+      "@my-blog/data-access-article": [
+        "apps/api/src/libs/data-access-article/src/index.ts"
+      ],
       "@my-blog/data-access-article-category": [
         "apps/api/src/libs/data-access-article-category/src/index.ts"
       ],
-      "@my-blog/data-access-category": ["apps/api/src/libs/data-access-category/src/index.ts"],
-      "@my-blog/data-access-comment": ["apps/api/src/libs/data-access-comment/src/index.ts"],
-      "@my-blog/presentation-blog": ["apps/api/src/libs/presentation-blog/src/index.ts"],
+      "@my-blog/data-access-category": [
+        "apps/api/src/libs/data-access-category/src/index.ts"
+      ],
+      "@my-blog/data-access-comment": [
+        "apps/api/src/libs/data-access-comment/src/index.ts"
+      ],
+      "@my-blog/presentation-blog": [
+        "apps/api/src/libs/presentation-blog/src/index.ts"
+      ],
       "@my-blog/typeOrm-config": ["typeOrm-config/src/index.ts"]
     }
   },
